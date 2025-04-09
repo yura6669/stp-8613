@@ -5,6 +5,7 @@
   padding-right: 16px;
 
   @include media(desktop) {
+    max-width: 1200px;
     padding-left: 80px;
     padding-right: 80px;
   }
