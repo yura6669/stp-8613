@@ -1,2 +1,1 @@
-# Vanilla-vite-template
-
+# Royal Match 3

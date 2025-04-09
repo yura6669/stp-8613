@@ -1,14 +1,23 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './hero.scss';
+@import './overview.scss';
+@import './features.scss';
+@import './how-to-play.scss';
+@import './testimonials.scss';
+@import './character.scss';
+@import './diaries.scss';
+@import './worldbuilding.scss';
+@import './achievements.scss';
+@import './footer.scss';
+@import './policy.scss';
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: 'Dongle', sans-serif;
+  @include font(28, 30);
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: $_main_color;
+  background-color: $_main_bg_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
