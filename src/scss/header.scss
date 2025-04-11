@@ -1,1 +1,106 @@
-// styles for header
+.header-section {
+  padding: 24px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $_main_bg_color;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.header-navigation {
+  @include media(desktop) {
+    display: flex;
+    column-gap: 88px;
+  }
+}
+
+.header-logo-container {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 134px;
+
+    transition: color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $_yellow;
+    }
+  }
+}
+
+.header-logo {
+  width: 44px;
+  height: 44px;
+
+  @include media(desktop) {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 8px;
+  }
+}
+
+.header-app-name {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    font-weight: 700;
+  }
+}
+
+.header-navigation-list {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 818px;
+    row-gap: 19px;
+    justify-content: center;
+  }
+}
+
+.header-navigation-first-list {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header-navigation-second-list {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header-navigation-item {
+  @include media(desktop) {
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $_yellow;
+    }
+  }
+}
+
+.header-burger {
+  cursor: pointer;
+
+  @include media(desktop) {
+    display: none;
+  }
+}

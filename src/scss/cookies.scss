@@ -1,0 +1,113 @@
+.cookies {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $_burger_bg_color;
+  backdrop-filter: blur(8px);
+  padding: 40px 16px;
+  box-sizing: border-box;
+  z-index: 1000;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cookies.open {
+  transform: translateY(0%);
+}
+
+.cookies-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+  max-width: 288px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    max-width: 526px;
+    align-items: flex-start;
+    row-gap: 32px;
+  }
+}
+
+.cookies-title {
+  @include font(40, 30);
+  font-weight: 700;
+
+  @include media(desktop) {
+    @include font(40, 32);
+  }
+}
+
+.cookies-message {
+  @include font(16, 24);
+  text-align: center;
+  padding: 0 2px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    @include font(28, 32);
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+
+.cookies-btns {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  max-width: 288px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    flex-direction: row;
+    max-width: none;
+    justify-content: center;
+    row-gap: 0;
+    column-gap: 40px;
+  }
+}
+
+.cookies-btn {
+  border-radius: 16px;
+  padding: 6px 0;
+  @include font(16, 32);
+  border: none;
+
+  @include media(desktop) {
+    @include font(28, 32);
+    padding: 10px 16px;
+    min-width: 176px;
+  }
+}
+
+.accept {
+  background-color: $_yellow;
+  color: $_indigo_text;
+  @include media(desktop) {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $_yellow;
+      background-color: $_blue_color;
+    }
+  }
+}
+
+.decline {
+  background-color: transparent;
+  border: 2px solid $_yellow;
+  color: $_yellow;
+
+  @include media(desktop) {
+    transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      border: 2px solid $_blue_color;
+      color: $_blue_color;
+    }
+  }
+}
