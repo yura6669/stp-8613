@@ -7,11 +7,13 @@
 }
 
 .header-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
 
   @include media(desktop) {
     display: block;
+    margin-bottom: 16px;
   }
 }
 
