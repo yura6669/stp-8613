@@ -1,1 +1,76 @@
-// styles for overview
+.overview-section {
+  position: relative;
+  overflow: hidden;
+
+  @include media(desktop) {
+    height: 1031px;
+  }
+}
+
+.overview-title {
+  @include font(24, 32);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 316px;
+
+  @include media(desktop) {
+    @include font(56, 64);
+    font-weight: 700;
+    margin-bottom: 515px;
+  }
+}
+
+.overview-img {
+  position: absolute;
+  top: 49px;
+  left: calc(50% - 343px / 1.9);
+  width: 343px;
+  height: 246px;
+  background-image: url('/img/game-overview/game-overview-preview.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  @include media(desktop) {
+    width: 1040px;
+    height: 748px;
+    top: 77px;
+    left: calc(50% - 1040px / 2.4);
+  }
+}
+
+.overview-feather {
+  position: absolute;
+  top: 231.42px;
+  right: calc(50% - 545px / 1.4);
+  width: 545px;
+  height: 115px;
+  background-image: url('/img/pero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  @include media(desktop) {
+    width: 1489px;
+    height: 325px;
+    top: 655px;
+    right: calc(50% - 1489px / 1.68);
+  }
+}
+
+.overview-text {
+  @include font(20, 24);
+  max-width: 256px;
+  margin: 0 auto;
+
+  span {
+    font-weight: 700;
+  }
+
+  @include media(desktop) {
+    @include font(28, 28);
+    color: $_yellow;
+    max-width: 534px;
+    margin: 0;
+  }
+}
