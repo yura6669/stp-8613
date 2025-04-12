@@ -7,11 +7,13 @@
 }
 
 .header-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
 
   @include media(desktop) {
     display: block;
+    margin-bottom: 16px;
   }
 }
 
@@ -33,7 +35,7 @@
 
     &:hover,
     &:focus {
-      color: $_yellow;
+      color: $_pink_hover;
     }
   }
 }
@@ -92,7 +94,7 @@
 
     &:hover,
     &:focus {
-      color: $_yellow;
+      color: $_pink_hover;
     }
   }
 }
