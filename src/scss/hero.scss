@@ -7,6 +7,7 @@
   flex-direction: column;
   row-gap: 24px;
   padding-bottom: 129px;
+  margin-bottom: 32px;
 
   @include media(desktop) {
     flex-direction: row;
@@ -15,6 +16,7 @@
     align-items: center;
     padding-top: 72.5px;
     padding-bottom: 328px;
+    margin-bottom: 48px;
   }
 }
 
@@ -66,7 +68,7 @@
 
   &:hover,
   &:focus {
-    background-color: $_yellow;
+    background-color: $_pink_hover;
   }
 }
 

@@ -41,14 +41,12 @@
 }
 
 .cookies-message {
-  @include font(16, 24);
-  text-align: center;
+  @include font(20, 24);
   padding: 0 2px;
   margin-bottom: 24px;
 
   @include media(desktop) {
     @include font(28, 32);
-    text-align: left;
     margin-bottom: 40px;
   }
 }
@@ -72,11 +70,11 @@
 .cookies-btn {
   border-radius: 16px;
   padding: 6px 0;
-  @include font(16, 32);
+  @include font(20, 32);
   border: none;
 
   @include media(desktop) {
-    @include font(28, 32);
+    @include font(28, 30);
     padding: 10px 16px;
     min-width: 176px;
   }
