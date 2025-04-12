@@ -2,9 +2,8 @@
 
 .achievements-section {
   text-align: center;
-  padding: 32px 20px;
+  padding: 0px 20px 32px 20px;
   color: white;
-  font-family: 'Dongle', sans-serif;
 }
 
 .achievements-section h2 {
@@ -30,8 +29,8 @@
   border: 4px solid #325c8b;
   border-radius: 16px;
   padding: 24px 16px;
-  width: 224px;
-  height: 219px;
+  width: 248px;
+  height: 230px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
@@ -43,7 +42,7 @@
 
 .achievement-card p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 107%;
   letter-spacing: 0em;
   text-align: center;
@@ -60,7 +59,7 @@
 
 @media (min-width: 1200px) {
   .achievements-section {
-    padding: 48px 20px;
+    padding: 0px 20px 48px 20px;
   }
 
   .achievement-card {
