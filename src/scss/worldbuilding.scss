@@ -1,1 +1,67 @@
 // styles for worldbuilding
+.phone-section-title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.phone-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 32px 0px;
+}
+
+.phone-section-img {
+  width: 120px;
+  height: 229px;
+  margin-bottom: 16px;
+}
+
+.phone-section-text {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0em;
+  color: #fff;
+  max-width: 288px;
+  padding: 0px 16px;
+}
+
+@media (min-width: 1200px) {
+  .phone-section-title {
+    font-size: 56px;
+  }
+
+  .phone-section-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 0px 0px 48px 0px;
+  }
+
+  .phone-section-dev-diaries .phone-section-content {
+    flex-direction: row-reverse;
+    gap: 64px;
+  }
+
+  .phone-section-lore .phone-section-content {
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .phone-section-text {
+    font-size: 28px;
+    line-height: 107%;
+    max-width: 460px;
+  }
+
+  .phone-section-img {
+    width: 352px;
+    height: 672px;
+    margin-bottom: 0;
+  }
+}
