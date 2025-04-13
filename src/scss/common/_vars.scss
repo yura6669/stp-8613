@@ -2,6 +2,7 @@ $_main_color: #ffffff;
 $_main_bg_color: #2f0052;
 $_indigo_text: #270052;
 $_burger_bg_color: rgba(2, 27, 55, 0.8);
+$_container_bg_color: rgba(2, 27, 55, 0.5);
 $_blue_color: #325c8b;
 $_pink_color: #b1578f;
 $_radial_gradient: radial-gradient(
@@ -12,3 +13,17 @@ $_radial_gradient: radial-gradient(
 );
 $_yellow: #fde3cf;
 $_light_yellow: #fdf1cf;
+$_linear_gradient: linear-gradient(
+  128deg,
+  #e188b4 10%,
+  #f9c1cf 10%,
+  #f9c1cf 30%,
+  #d975ab 30%,
+  #d975ab 50%,
+  #f9c1cf 50%,
+  #f9c1cf 70%,
+  #d975ab 70%,
+  #d975ab 89.89%,
+  #f9c1cf 90.05%
+);
+$_black: #000;

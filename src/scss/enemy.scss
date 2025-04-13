@@ -1,14 +1,17 @@
 // styles for enemy
-
 .witch-block {
   position: relative;
-  color: white;
+  color: $_main_color;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   overflow: hidden;
+
+  @include media(desktop) {
+    padding-bottom: 276px;
+  }
 }
 
 .witch-block-title {
@@ -16,9 +19,14 @@
   font-size: 24px;
   letter-spacing: 0em;
   text-align: center;
-  color: #fff;
+  color: $_main_color;
   padding-bottom: 16px;
   margin-top: 0px;
+
+  @include media(desktop) {
+    font-size: 56px;
+    padding-top: 68px;
+  }
 }
 
 .witch-block-content {
@@ -30,24 +38,37 @@
   margin-bottom: 16px;
   z-index: 2;
   position: relative;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 64px;
+  }
 }
 
 .witch-image img {
   max-width: 224px;
   height: auto;
+
+  @include media(desktop) {
+    max-width: 500px;
+  }
 }
 
 .witch-block-content-text {
   max-width: 288px;
   text-align: left;
-  font-weight: 400;
   font-size: 20px;
   line-height: 107%;
   letter-spacing: 0em;
-  color: #fff;
-  padding-left: 16px;
-  padding-top: 32px;
-  padding-right: 16px;
+  color: $_main_color;
+  padding: 32px 16px 0px 16px;
+
+  @include media(desktop) {
+    max-width: 460px;
+    font-size: 28px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .witch-block-content-text strong {
@@ -62,50 +83,18 @@
   width: 548px;
   height: 115px;
   background-image: url('/img/pero.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
-}
-
-@media (min-width: 1200px) {
-  .witch-block-title {
-    font-size: 56px;
-    padding-top: 68px;
+  @media only screen and (min-resolution: 192dpi) {
+    background-image: url('/img/pero@2x.png');
   }
-
-  .witch-image img {
-    max-width: 500px;
-    height: auto;
-  }
-
-  .witch-block-content-text {
-    max-width: 460px;
-    font-size: 28px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .witch-feather {
-    position: absolute;
+  @include media(desktop) {
     bottom: 100px;
     right: calc(50% - (1489px / 1.5));
     transform: translateY(25px);
     width: 1489px;
     height: 325px;
-    background-image: url('/img/pero.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
-  .witch-block {
-    padding-bottom: 276px;
-  }
-
-  .witch-block-content {
-    flex-direction: row;
-    gap: 64px;
   }
 }

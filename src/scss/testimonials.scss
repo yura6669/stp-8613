@@ -1,12 +1,20 @@
 .section-testimonials {
   padding: 32px 0;
+
+  @include media(desktop) {
+    padding: 48px 0;
+  }
 }
 
 .section-testimonials .section-title {
-  color: #fff;
+  color: $_main_color;
   font-size: 24px;
   margin-bottom: 16px;
   text-align: center;
+
+  @include media(desktop) {
+    font-size: 56px;
+  }
 }
 
 .testimonials-container {
@@ -14,36 +22,36 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
+
+  @include media(desktop) {
+    gap: 24px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .testimonial-card {
-  border: 4px solid #fde3cf;
+  border: 4px solid $_yellow;
   border-radius: 16px;
   width: 248px;
   height: 182px;
-  background: linear-gradient(
-    128deg,
-    #e188b4 10%,
-    #f9c1cf 10%,
-    #f9c1cf 30%,
-    #d975ab 30%,
-    #d975ab 50%,
-    #f9c1cf 50%,
-    #f9c1cf 70%,
-    #d975ab 70%,
-    #d975ab 89.89%,
-    #f9c1cf 90.05%
-  );
+  background: $_linear_gradient;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   padding: 0;
+
+  @include media(desktop) {
+    width: 331px;
+    height: 254px;
+  }
 }
 
 .testimonial-card-box {
-  background-color: #fbe0f4;
-  border: 4px solid #b1578f;
+  background: $_yellow;
+  border: 4px solid $_pink_color;
   border-radius: 16px;
   width: 224px;
   height: 164px;
@@ -52,14 +60,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include media(desktop) {
+    width: 299px;
+    height: 228px;
+    padding: 22px;
+  }
 }
 
 .testimonial-text {
-  font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0em;
-  color: #000;
+  color: $_black;
+
+  @include media(desktop) {
+    font-size: 28px;
+    line-height: 114%;
+    color: $_indigo_text;
+  }
 }
 
 .testimonial-author {
@@ -67,43 +86,9 @@
   font-weight: 700;
   font-size: 20px;
   text-align: right;
-  color: #000;
-}
+  color: $_black;
 
-@media (min-width: 1200px) {
-  .section-testimonials {
-    padding: 48px 0;
-  }
-
-  .testimonials-container {
-    gap: 24px;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .testimonial-card {
-    width: 331px;
-    height: 254px;
-  }
-
-  .testimonial-text {
-    font-size: 28px;
-    line-height: 114%;
-    color: #270052;
-  }
-
-  .testimonial-author {
+  @include media(desktop) {
     font-size: 24px;
-  }
-
-  .testimonial-card-box {
-    width: 299px;
-    height: 228px;
-    padding: 22px;
-  }
-
-  .section-testimonials .section-title {
-    font-size: 56px;
   }
 }
