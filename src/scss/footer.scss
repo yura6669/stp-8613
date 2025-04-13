@@ -66,4 +66,17 @@
     font-size: 56px;
     padding-top: 68px;
   }
+
+  .footer-container-links a {
+    font-size: 32px;
+  }
+
+  .footer-container p {
+    font-size: 24px;
+  }
+  .footer-container .footer-container-links {
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-bottom: 40px;
+  }
 }

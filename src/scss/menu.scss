@@ -33,5 +33,6 @@
 }
 
 .menu-item {
+  @include font(24, 30);
   font-weight: 700;
 }

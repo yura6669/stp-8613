@@ -1,1 +1,93 @@
-// styles for hero
+.hero-section {
+  position: relative;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding-bottom: 129px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    column-gap: 8px;
+    row-gap: 0;
+    align-items: center;
+    padding-top: 72.5px;
+    padding-bottom: 328px;
+    margin-bottom: 48px;
+  }
+}
+
+.hero-preview {
+  max-width: 224px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    max-width: 509px;
+    margin: 0;
+  }
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+
+  @include media(desktop) {
+    margin: 0;
+    row-gap: 40px;
+    align-items: flex-start;
+    max-width: 523px;
+  }
+}
+
+.hero-title {
+  @include font(40, 30);
+  -webkit-text-stroke: 1px $_pink_color;
+  text-align: center;
+
+  @include media(desktop) {
+    text-align: left;
+    @include font(77, 60);
+    -webkit-text-stroke: 2px $_pink_color;
+  }
+}
+
+.hero-button {
+  border: 1px solid $_pink_color;
+  border-radius: 10px;
+  background-color: $_main_color;
+  padding: 8px 12px;
+
+  @include media(desktop) {
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $_pink_hover;
+  }
+}
+
+.hero-feather {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 548px / 1.4);
+  transform: translateY(-34px) scaleX(-1);
+  width: 548px;
+  height: 115px;
+  background-image: url('/img/pero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  @include media(desktop) {
+    width: 1489px;
+    height: 325px;
+    left: calc(50% - (1489px / 1.5));
+    transform: translateY(-20px) scaleX(-1);
+  }
+}
