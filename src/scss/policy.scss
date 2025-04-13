@@ -1,61 +1,88 @@
 // styles for policy
-
 .privacy-policy {
-  font-family: 'Dongle', sans-serif;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 16px 26px 16px;
-  color: #fff;
-}
+  padding: 40px 16px 26px;
+  color: $_main_color;
 
-.privacy-policy h1 {
-  font-weight: 700;
-  font-size: 40px;
-  letter-spacing: 0em;
-  color: #fff;
-  padding-bottom: 24px;
-}
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0;
+    color: $_main_color;
+    padding-bottom: 24px;
+  }
 
-.privacy-policy h2 {
-  font-size: 24px;
-  padding-bottom: 20px;
-}
+  h2 {
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
 
-.privacy-policy h3 {
-  font-weight: 400;
-  font-size: 20px;
-}
+  h3 {
+    font-size: 20px;
+  }
 
-.privacy-policy p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 107%;
-  padding-bottom: 28px;
-}
+  p {
+    font-size: 20px;
+    line-height: 107%;
+    padding-bottom: 20px;
 
-.privacy-policy p:last-child {
-  padding-bottom: 0px;
-}
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 
-.privacy-policy ul li p {
-  padding-bottom: 0;
-}
+  ul {
+    padding-left: 20px;
+    margin-bottom: 24px;
 
-.privacy-policy ul {
-  padding-left: 20px;
-  margin-bottom: 24px;
-}
+    li {
+      font-size: 20px;
+      line-height: 1;
+      list-style-type: disc;
+      padding-left: 5px;
+      margin-bottom: 8px;
 
-.privacy-policy li {
-  font-size: 16px;
-  line-height: 1;
-  list-style-type: disc;
-  padding-left: 5px;
-  margin-bottom: 8px;
-}
+      &::marker {
+        font-size: 10px;
+      }
 
-.privacy-policy li::marker {
-  font-size: 10px;
+      p {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  @include media(desktop) {
+    padding: 40px 80px;
+
+    h1 {
+      font-size: 80px;
+      padding-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 28px;
+    }
+    ul {
+      li {
+        font-size: 28px;
+        padding-left: 10px;
+
+        &::marker {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 .back-button-policy {
@@ -63,137 +90,113 @@
   gap: 16px;
   align-items: center;
   border-radius: 16px;
-  padding: 0px 16px;
+  padding: 0 16px;
   width: 121px;
   height: 44px;
-  background: #fde3cf;
+  background: $_yellow;
   font-weight: 700;
   font-size: 16px;
   line-height: 108%;
-  color: #270052;
+  color: $_indigo_text;
   text-decoration: none;
   margin-bottom: 30px;
   transition: background-color 0.3s ease-in-out;
-}
 
-.footer-policy-container {
-  position: relative;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 16px;
-}
-
-.footer-policy-container .footer-container-links {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding-bottom: 16px;
-}
-
-.footer-policy p {
-  font-weight: 700;
-  font-size: 16px;
-  color: #fff;
-  padding-bottom: 20px;
-}
-
-.back-button-policy-text {
-  margin-top: 2.5px;
-}
-
-.icon-policy-back {
-  fill: #270052;
-  width: 12px;
-  height: 10px;
-}
-
-@media (min-width: 1200px) {
   .icon-policy-back {
-    fill: #270052;
-    width: 24px;
-    height: 20px;
-  }
-
-  .privacy-policy {
-    padding: 40px 80px;
-  }
-
-  .back-button-policy:hover {
-    background-color: #2f0052;
-    border: 2px solid #fde3cf;
-    gap: 10px;
-    width: 188px;
-    height: 56px;
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #fde3cf;
-  }
-
-  .back-button-policy:hover .icon-policy-back {
-    fill: #fde3cf;
-    width: 24px;
-    height: 20px;
-  }
-
-  .privacy-policy h1 {
-    font-size: 80px;
-    padding-bottom: 32px;
-  }
-
-  .privacy-policy h2 {
-    font-size: 40px;
-    padding-bottom: 28px;
-  }
-
-  .privacy-policy h3 {
-    font-size: 32px;
-  }
-
-  .privacy-policy p {
-    font-size: 28px;
-  }
-
-  .privacy-policy li {
-    font-size: 28px;
-    padding-left: 10px;
-  }
-
-  .privacy-policy li::marker {
-    font-size: 14px;
-  }
-
-  .footer-policy-container {
-    padding: 0px 80px;
+    fill: $_indigo_text;
+    width: 12px;
+    height: 10px;
   }
 
   .back-button-policy-text {
-    margin-top: 5px;
+    margin-top: 2.5px;
   }
 
-  .back-button-policy {
+  @include media(desktop) {
     gap: 10px;
     width: 188px;
     height: 56px;
     font-size: 32px;
     margin-bottom: 40px;
+
+    .back-button-policy-text {
+      margin-top: 5px;
+    }
+
+    &:hover {
+      background-color: $_main_bg_color;
+      border: 2px solid $_yellow;
+      color: $_yellow;
+
+      .icon-policy-back {
+        fill: $_yellow;
+        width: 24px;
+        height: 20px;
+      }
+    }
+
+    .icon-policy-back {
+      width: 24px;
+      height: 20px;
+    }
+  }
+}
+.footer-policy {
+  color: $_main_color;
+  padding: 0 16px;
+
+  @include media(desktop) {
+    padding: 0 80px;
   }
 
-  .footer-policy-container .footer-container-links {
-    justify-content: flex-end;
-    padding-bottom: 40px;
-    flex-direction: row;
-    gap: 26px;
+  .footer-policy-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include media(desktop) {
+      position: relative;
+      display: flex;
+    }
   }
 
-  .footer-policy p {
-    font-size: 24px;
+  .footer-container-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+    padding-top: 0px;
+
+    a {
+      font-weight: 500;
+      color: $_main_color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    @include media(desktop) {
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 26px;
+      padding-bottom: 0;
+    }
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+
+    @include media(desktop) {
+      font-size: 24px;
+      padding-top: 40px;
+      text-align: center;
+    }
   }
 }

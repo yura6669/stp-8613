@@ -1,9 +1,12 @@
 // styles for achievements
-
 .achievements-section {
   text-align: center;
   padding: 0px 20px 32px 20px;
-  color: white;
+  color: $_main_color;
+
+  @include media(desktop) {
+    padding: 0px 20px 48px 20px;
+  }
 }
 
 .achievements-section h2 {
@@ -11,8 +14,12 @@
   font-size: 24px;
   letter-spacing: 0em;
   text-align: center;
-  color: #fff;
+  color: $_main_color;
   padding-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 56px;
+  }
 }
 
 .achievements-container {
@@ -20,19 +27,31 @@
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
 }
 
 .achievement-card {
   justify-content: center;
   align-items: center;
-  background: rgba(2, 27, 55, 0.5);
-  border: 4px solid #325c8b;
+  background: $_container_bg_color;
+  border: 4px solid $_blue_color;
   border-radius: 16px;
   padding: 24px 16px;
   width: 248px;
   height: 230px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+
+  @include media(desktop) {
+    padding: 24px;
+    width: 331px;
+    height: 251px;
+  }
 }
 
 .achievement-card img {
@@ -41,12 +60,15 @@
 }
 
 .achievement-card p {
-  font-weight: 400;
   font-size: 20px;
   line-height: 107%;
   letter-spacing: 0em;
   text-align: center;
-  color: #fff;
+  color: $_main_color;
+
+  @include media(desktop) {
+    font-size: 28px;
+  }
 }
 
 .achievement-card p strong {
@@ -55,30 +77,4 @@
 
 .achievement-card:hover {
   transform: translateY(-5px);
-}
-
-@media (min-width: 1200px) {
-  .achievements-section {
-    padding: 0px 20px 48px 20px;
-  }
-
-  .achievement-card {
-    padding: 24px;
-    width: 331px;
-    height: 251px;
-  }
-
-  .achievements-section h2 {
-    font-size: 56px;
-  }
-
-  .achievement-card p {
-    font-size: 28px;
-  }
-
-  .achievements-container {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 24px;
-  }
 }
