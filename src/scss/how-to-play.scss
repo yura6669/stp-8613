@@ -1,1 +1,180 @@
-// styles for how to play
+.how-to-play-section {
+  @include media(desktop) {
+    position: relative;
+  }
+}
+
+.how-to-play-title {
+  @include font(24, 32);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    @include font(56, 64);
+    margin-bottom: 187px;
+  }
+}
+
+.how-to-play-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 288px;
+  margin: 0 auto;
+  row-gap: 16px;
+
+  @include media(desktop) {
+    margin: 0;
+    max-width: none;
+    row-gap: 24px;
+    padding-bottom: 241px;
+  }
+}
+
+.how-to-play-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+    column-gap: 24.28px;
+  }
+}
+
+.last-how-to-play-item {
+  @include media(desktop) {
+    justify-content: end;
+  }
+}
+
+.how-to-play-item-descr {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  box-shadow: inset 0 0 0 4px $_blue_color;
+  border-radius: 16px;
+  background-color: $_container_bg_color;
+  padding: 24px 16px;
+
+  @include media(desktop) {
+    column-gap: 19px;
+    max-width: 331px;
+  }
+}
+
+.how-to-play-item-descr-num {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: $_pink_color;
+  @include font(32, 64);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    transform: translateY(1px);
+  }
+
+  @include media(desktop) {
+    min-width: 48px;
+    height: 48px;
+    @include font(48, 64);
+
+    p {
+      transform: translateY(2px);
+    }
+  }
+}
+
+.how-to-play-item-descr-text {
+  @include font(23, 23);
+
+  span {
+    font-weight: 700;
+  }
+
+  @include media(desktop) {
+    @include font(28, 28);
+  }
+}
+
+.how-to-play-item-img {
+  width: 224px;
+
+  @include media(desktop) {
+    position: absolute;
+    width: 343px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.img-1 {
+  @include media(desktop) {
+    bottom: 241px;
+    left: 80px;
+  }
+}
+
+.img-2 {
+  @include media(desktop) {
+    bottom: 0;
+    left: 245px;
+  }
+}
+
+.img-3 {
+  @include media(desktop) {
+    top: 97px;
+    right: 245px;
+  }
+}
+
+.img-4 {
+  @include media(desktop) {
+    top: 309px;
+    right: 80px;
+  }
+}
+
+.how-to-play-arrow {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    width: 120px;
+  }
+}
+
+.arrow-1 {
+  @include media(desktop) {
+    margin-left: 33px;
+    transform: translateY(-36px);
+  }
+}
+
+.arrow-2 {
+  @include media(desktop) {
+    margin-left: 214px;
+    transform: translateY(-36px);
+  }
+}
+
+.arrow-3 {
+  @include media(desktop) {
+    margin-left: 391px;
+    transform: translateY(-36px);
+  }
+}
+
+.arrow-4 {
+  @include media(desktop) {
+    transform: translateY(-36px);
+  }
+}
