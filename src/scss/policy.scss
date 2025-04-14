@@ -52,6 +52,15 @@
     }
   }
 
+  .policy-link {
+    overflow-wrap: break-word;
+    transition: color 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+      color: $_pink_hover;
+    }
+  }
+
   @include media(desktop) {
     padding: 40px 80px;
 
@@ -123,7 +132,8 @@
       margin-top: 5px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $_main_bg_color;
       border: 2px solid $_yellow;
       color: $_yellow;
@@ -141,6 +151,7 @@
     }
   }
 }
+
 .footer-policy {
   color: $_main_color;
   padding: 0 16px;
@@ -173,8 +184,10 @@
       font-weight: 500;
       color: $_main_color;
       text-decoration: none;
-
-      &:hover {
+      transition: color 0.3s ease-in-out;
+      &:hover,
+      &:focus {
+        color: $_pink_hover;
         text-decoration: underline;
       }
     }

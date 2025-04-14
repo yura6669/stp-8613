@@ -39,9 +39,12 @@
   color: $_main_color;
   text-decoration: none;
   white-space: nowrap;
+  transition: color 0.3s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: underline;
+    color: $_pink_hover;
   }
 
   @include media(desktop) {
