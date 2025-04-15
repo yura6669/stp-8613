@@ -22,7 +22,7 @@
 
   p {
     font-size: 20px;
-    line-height: 107%;
+    line-height: 30px;
     padding-bottom: 20px;
 
     &:last-child {
@@ -57,6 +57,7 @@
     &:hover,
     &:focus {
       color: $_pink_hover;
+      text-decoration: underline;
     }
   }
 
@@ -79,6 +80,7 @@
 
     p {
       font-size: 28px;
+      line-height: 107%;
     }
     ul {
       li {
@@ -95,15 +97,15 @@
 
 .back-button-policy {
   display: flex;
-  gap: 16px;
+  gap: 10px;
   align-items: center;
   border-radius: 16px;
   padding: 0 16px;
-  width: 121px;
+  width: 129px;
   height: 44px;
   background: $_yellow;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 108%;
   color: $_indigo_text;
   text-decoration: none;
@@ -187,7 +189,6 @@
       &:hover,
       &:focus {
         color: $_pink_hover;
-        text-decoration: underline;
       }
     }
 

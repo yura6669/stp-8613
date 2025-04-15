@@ -48,7 +48,6 @@
   width: 248px;
   height: 230px;
   text-align: center;
-  transition: transform 0.2s ease-in-out;
 
   @include media(desktop) {
     padding: 24px;
@@ -76,8 +75,4 @@
 
 .achievement-card p strong {
   font-weight: 700;
-}
-
-.achievement-card:hover {
-  transform: translateY(-5px);
 }
