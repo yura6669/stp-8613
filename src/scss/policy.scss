@@ -1,4 +1,3 @@
-// styles for policy
 .privacy-policy {
   margin: 0 auto;
   padding: 40px 16px 26px;
@@ -54,7 +53,7 @@
 
   .policy-link {
     overflow-wrap: break-word;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out;
     &:hover,
     &:focus {
       color: $_pink_hover;
@@ -111,7 +110,7 @@
   color: $_indigo_text;
   text-decoration: none;
   margin-bottom: 30px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 
   .icon-policy-back {
     fill: $_indigo_text;
@@ -186,7 +185,7 @@
       font-weight: 500;
       color: $_main_color;
       text-decoration: none;
-      transition: color 0.3s ease-in-out;
+      transition: color 0.2s ease-in-out;
       &:hover,
       &:focus {
         color: $_pink_hover;
