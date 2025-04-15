@@ -3,7 +3,8 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  background-color: $_main_bg_color;
+  background-color: $_header_bg_color;
+  backdrop-filter: blur(25px);
   width: 100%;
 }
 
