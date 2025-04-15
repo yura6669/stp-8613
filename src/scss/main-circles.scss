@@ -404,3 +404,49 @@
     display: none;
   }
 }
+
+.extra-circle-left-1 {
+  top: 745px;
+  left: calc(50% - 223px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 410px;
+    left: calc(50% - 700px);
+    z-index: -1;
+  }
+
+  @include media(desktop-max) {
+    display: none;
+  }
+}
+
+.extra-circle-right-1 {
+  top: 670px;
+  right: calc(50% - 205px);
+  z-index: -2;
+
+  @include media(desktop) {
+    top: 1113px;
+    right: calc(50% - 600px);
+  }
+
+  @include media(desktop-max) {
+    display: none;
+  }
+}
+
+.extra-circle-left-2 {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    top: 3100px;
+    left: calc(50% - 700px);
+    z-index: -1;
+  }
+
+  @include media(desktop-max) {
+    display: none;
+  }
+}
