@@ -54,10 +54,9 @@
 
   .policy-link {
     overflow-wrap: break-word;
-    transition: color 0.3s ease-in-out;
     &:hover,
-    &:focus {
-      color: $_pink_hover;
+    &:focus,
+    &:visited {
       text-decoration: underline;
     }
   }
