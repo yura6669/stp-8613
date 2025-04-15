@@ -213,3 +213,162 @@
     }
   }
 }
+// background-circle
+body {
+  overflow-x: hidden;
+}
+
+.background-circle {
+  position: absolute;
+  width: 779px;
+  height: 779px;
+  border-radius: 100%;
+  background: radial-gradient(
+    55.92% 65.68% at 65.42% 62.71%,
+    rgb(254, 179, 219) 0%,
+    rgb(253, 166, 227) 43.087780475616455%,
+    rgb(221, 126, 243) 100%
+  );
+  filter: blur(100px);
+  z-index: -1;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+  contain: layout paint;
+
+  @include media(desktop) {
+    width: 947px;
+    height: 938px;
+    background: radial-gradient(
+      55.92% 65.68% at 65.42% 62.71%,
+      rgb(254, 179, 219) 0%,
+      rgb(253, 166, 227) 43%,
+      rgb(221, 126, 243) 100%
+    );
+    filter: blur(1000px);
+  }
+}
+
+.circle-left-1 {
+  left: -350px;
+  top: 75px;
+  display: block;
+
+  @include media(desktop) {
+    left: -700px;
+    top: -100px;
+  }
+}
+
+.circle-left-2 {
+  left: -350px;
+  top: 750px;
+  display: block;
+
+  @include media(desktop) {
+    left: -600px;
+    top: 1300px;
+  }
+}
+
+.circle-left-3 {
+  left: -300px;
+  top: 1450px;
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-left-4 {
+  left: -350px;
+  top: 2000px;
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-left-5 {
+  left: -300px;
+  top: 2500px;
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-left-6 {
+  left: -350px;
+  top: 2950px;
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-right-1 {
+  right: -300px;
+  top: -75px;
+  display: block;
+
+  @include media(desktop) {
+    right: -700px;
+    top: 125px;
+  }
+}
+
+.circle-right-2 {
+  right: -300px;
+  top: 500px;
+  display: block;
+
+  @include media(desktop) {
+    right: -600px;
+    top: 1670px;
+  }
+}
+
+.circle-right-3 {
+  right: -350px;
+  top: 1000px;
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-right-4 {
+  right: -300px;
+  top: 1750px;
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-right-5 {
+  right: -350px;
+  top: 2200px;
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-right-6 {
+  right: -300px;
+  top: 2750px;
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
