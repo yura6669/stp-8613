@@ -74,7 +74,6 @@
 
   @include media(desktop) {
     @include font(28, 28);
-    color: $_yellow;
     max-width: 534px;
     margin: 0;
   }
