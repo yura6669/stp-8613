@@ -1,5 +1,5 @@
 .cookies {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: $_burger_bg_color;
@@ -7,7 +7,7 @@
   padding: 40px 16px;
   box-sizing: border-box;
   z-index: 1000;
-  transform: translateY(100%);
+  transform: translateY(150%);
   transition: transform 0.2s ease-in-out;
 }
 
