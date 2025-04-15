@@ -27,11 +27,15 @@
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+  max-width: 248px;
+  margin: 0 auto;
 
   @include media(desktop) {
     flex-direction: row;
     align-items: flex-start;
     gap: 24px;
+    max-width: none;
+    margin: 0;
   }
 }
 
