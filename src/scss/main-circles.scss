@@ -1,0 +1,406 @@
+.main-circle {
+  width: 132px;
+  height: 121px;
+  border-radius: 50%;
+  background: radial-gradient(
+    55.92% 65.68% at 65.42% 62.71%,
+    rgb(254, 179, 219) 0%,
+    rgb(253, 166, 227) 43.087780475616455%,
+    rgb(221, 126, 243) 100%
+  );
+  filter: blur(75px);
+  position: absolute;
+
+  @include media(desktop) {
+    width: 324px;
+    height: 336px;
+    filter: blur(150px);
+  }
+
+  @include media(desktop-max) {
+    width: 947px;
+    height: 938px;
+    filter: blur(500px);
+  }
+}
+
+.circle-left-1 {
+  top: 312px;
+  left: calc(50% - 77px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 1270px;
+    left: calc(50% - 844px);
+  }
+
+  @include media(desktop-max) {
+    top: -172px;
+    left: calc(50% - 1918px);
+    z-index: 100000;
+  }
+}
+
+.circle-rigth-1 {
+  top: 82px;
+  right: calc(50% - 229px);
+  z-index: 100000;
+
+  @include media(desktop) {
+    top: 62px;
+    right: calc(50% - 839px);
+  }
+
+  @include media(desktop-max) {
+    top: 125px;
+    right: calc(50% - 1954px);
+  }
+}
+
+.circle-left-2 {
+  top: 1252px;
+  left: calc(50% - 253px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 2648px;
+    left: calc(50% - 800px);
+  }
+
+  @include media(desktop-max) {
+    top: 1403px;
+    left: calc(50% - 1647px);
+  }
+}
+
+.circle-rigth-2 {
+  top: 1142px;
+  right: calc(50% - 229px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 2930px;
+    right: calc(50% - 672px);
+  }
+
+  @include media(desktop-max) {
+    top: 1872px;
+    right: calc(50% - 1560px);
+  }
+}
+
+.circle-rigth-3 {
+  top: 1598px;
+  right: calc(50% - 189px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 4107px;
+    right: calc(50% - 722px);
+  }
+
+  @include media(desktop-max) {
+    top: 3972px;
+    right: calc(50% - 1790px);
+  }
+}
+
+.circle-left-3 {
+  top: 1848px;
+  left: calc(50% - 253px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 4199px;
+    left: calc(50% - 849px);
+  }
+
+  @include media(desktop-max) {
+    top: 3232px;
+    left: calc(50% - 1917px);
+  }
+}
+
+.circle-rigth-4 {
+  top: 2327px;
+  right: calc(50% - 189px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 4993px;
+    right: calc(50% - 859px);
+  }
+
+  @include media(desktop-max) {
+    top: 6002px;
+    right: calc(50% - 1680px);
+  }
+}
+
+.circle-left-4 {
+  top: 2678px;
+  left: calc(50% - 283px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 5602px;
+    left: calc(50% - 696px);
+  }
+
+  @include media(desktop-max) {
+    top: 5152px;
+    left: calc(50% - 1747px);
+  }
+}
+
+.circle-rigth-5 {
+  top: 2858px;
+  right: calc(50% - 219px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 5387px;
+    right: calc(50% - 647px);
+  }
+
+  @include media(desktop-max) {
+    display: none;
+  }
+}
+
+.circle-left-5 {
+  top: 3073px;
+  left: calc(50% - 193px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 6135px;
+    left: calc(50% - 830px);
+  }
+
+  @include media(desktop-max) {
+    top: 7057px;
+    left: calc(50% - 1973px);
+  }
+}
+
+.circle-rigth-6 {
+  top: 3276px;
+  right: calc(50% - 219px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 6505px;
+    right: calc(50% - 908px);
+  }
+
+  @include media(desktop-max) {
+    display: none;
+  }
+}
+
+.circle-left-6 {
+  top: 3573px;
+  left: calc(50% - 183px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 7080px;
+    left: calc(50% - 896px);
+  }
+
+  @include media(desktop-max) {
+    display: none;
+  }
+}
+
+.circle-rigth-7 {
+  top: 3907px;
+  right: calc(50% - 169px);
+  z-index: -1;
+
+  @include media(desktop) {
+    top: 6968px;
+    right: calc(50% - 669px);
+  }
+
+  @include media(desktop-max) {
+    display: none;
+  }
+}
+
+.circle-left-7 {
+  top: 4216px;
+  left: calc(50% - 213px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-left-8 {
+  bottom: 2931px;
+  left: calc(50% - 203px);
+  z-index: -1;
+
+  @include media(desktop) {
+    bottom: -343px;
+    left: calc(50% - 678px);
+  }
+
+  @include media(desktop-max) {
+    display: none;
+  }
+}
+
+.circle-rigth-8 {
+  bottom: 2660px;
+  right: calc(50% - 189px);
+  z-index: -1;
+
+  @include media(desktop) {
+    bottom: 750px;
+    right: calc(50% - 872px);
+  }
+
+  @include media(desktop-max) {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.circle-left-9 {
+  bottom: 2435px;
+  left: calc(50% - 273px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-left-10 {
+  bottom: 2284px;
+  left: calc(50% - 253px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-rigth-9 {
+  bottom: 2155px;
+  right: calc(50% - 249px);
+  z-index: -1;
+
+  @include media(desktop) {
+    bottom: -319px;
+    right: calc(50% - 782px);
+  }
+
+  @include media(desktop-max) {
+    display: none;
+  }
+}
+
+.circle-left-11 {
+  bottom: 1951px;
+  left: calc(50% - 263px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-rigth-10 {
+  bottom: 1742px;
+  right: calc(50% - 269px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-left-12 {
+  bottom: 1453px;
+  left: calc(50% - 173px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-rigth-11 {
+  bottom: 1217px;
+  right: calc(50% - 219px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-left-13 {
+  bottom: 1018px;
+  left: calc(50% - 253px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-rigth-12 {
+  bottom: 794px;
+  right: calc(50% - 229px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-rigth-13 {
+  bottom: 503px;
+  right: calc(50% - 249px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-left-14 {
+  bottom: 458px;
+  left: calc(50% - 213px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-rigth-14 {
+  bottom: 0;
+  right: calc(50% - 229px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.circle-left-15 {
+  bottom: -147px;
+  left: calc(50% - 263px);
+  z-index: -1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}

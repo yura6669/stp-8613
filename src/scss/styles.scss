@@ -14,6 +14,7 @@
 @import './menu.scss';
 @import './cookies.scss';
 @import './policy.scss';
+@import './main-circles.scss';
 
 :root {
   font-family: 'Dongle', sans-serif;
@@ -28,4 +29,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.bg-container {
+  position: relative;
+  overflow: hidden;
 }
