@@ -63,7 +63,7 @@
   padding: 8px 12px;
 
   @include media(desktop) {
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
   }
 
   &:hover,
@@ -83,6 +83,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
+  @media only screen and (min-resolution: 192dpi) {
+    background-image: url('/img/pero@2x.png');
+  }
 
   @include media(desktop) {
     width: 1489px;

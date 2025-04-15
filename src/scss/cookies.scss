@@ -8,7 +8,7 @@
   box-sizing: border-box;
   z-index: 1000;
   transform: translateY(100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .cookies.open {
@@ -84,7 +84,7 @@
   background-color: $_yellow;
   color: $_indigo_text;
   @include media(desktop) {
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
     &:hover,
     &:focus {
@@ -100,7 +100,7 @@
   color: $_yellow;
 
   @include media(desktop) {
-    transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
 
     &:hover,
     &:focus {
